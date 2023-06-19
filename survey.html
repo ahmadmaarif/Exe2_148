@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/survey.css">
+    <title>Your Order</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Online Order</h3>
+            <p> Lakukan Pemesanan Segera, Tiket Terbatas <3<3<3</p>
+
+        </div>
+    <form action="">
+        <label for="nama">Nama</label><br>
+        <input type="text" placeholder="Nama Anda" id="nama"><br><br>
+        <label for="email">E-mail</label><br>
+        <input type="text" placeholder="E-mail Anda" id="email"><br>
+        <label for="telp">Nomor Telepon</label><br>
+        <input type="text" placeholder="Nomor telepon Anda" id="telp"><br>
+        <p>Pilihan tempat duduk:</p>
+        <input type="radio" name="tempat" id="festival" value="festival">
+        <label for="festival" style="font-weight: normal;">Festival</label><br>
+        <input type="radio" name="tempat" id="cat" value="cat">
+        <label for="cat" style="font-weight: normal;">CAT</label><br>
+        <input type="radio" name="tempat" id="cat2" value="cat2">
+        <label for="cat2" style="font-weight: normal;">CAT 2</label><br>
+        <input type="radio" name="tempat" id="cat3" value="cat3">
+        <label for="cat3" style="font-weight: normal;">CAT 3</label><br><br>
+        <label for="tiket">Jumlah Tiket</label><br>
+        <select id="tiket">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+        <label for="">Ada pertanyaan?</label><br>
+        <textarea placeholder="Tulis pertanyaan mu disini" name="pertanyaan" id="pertanyaan" cols="30" rows="5"></textarea><br><br>
+        <button type="submit" onclick="kirimData()">KIRIM</button>
+<p>*Soegibornean Tour 2023 Juny 1-20 (DontMissTheDate)*</p>
+    </form>
+    </div>
+    <script src="script/survey.js"></script>
+</body>
+</html>
